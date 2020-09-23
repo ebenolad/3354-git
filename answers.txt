@@ -1,0 +1,6 @@
+A. 8
+B. Jan 24,2017
+C. "git log" only operates on the commited history of the directory while "git status" lets you inspect the working directory and the staging area
+D. Untracked changes are changes not done in Git while unstaged changes are in Git but not marked for commit.
+E. "git reset" is for updating the index while "git checkout" will only update the HEAD if you checkout a branch
+F. Unless the changes in your working directory are changed, they will be overwritten. 
