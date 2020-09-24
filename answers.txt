@@ -1,5 +1,5 @@
 (a) How many commits exist in the repository history after completing step 8 (Including commits made by the original author)?
-5 commits exist in the repository history after completing step 8.
+12 commits exist in the repository history after completing step 8.
 
 (b) When was the file .gitignore added?
 .gitignore file was added four years ago.
