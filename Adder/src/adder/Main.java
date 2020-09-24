@@ -11,7 +11,11 @@ public class Main {
         }
     }
 
-    private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+    private static int addArguments(String... args) {
+        int output = 0;
+        for(int i = 0; i < args.length; i++) {
+            output += args[i];
+        }
+        return output;
     }
 }
