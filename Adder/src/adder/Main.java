@@ -7,15 +7,24 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide two integers to add");
+            System.err.println("Please provide multiple integers to add");
         }
     }
 
     private static int addArguments(String... args) {
         int output = 0;
-        for(int i = 0; i < args.length; i++) {
-            output += args[i];
+        
+        if (args[0] == '-') {
+            for(int i = 1; i < args.length; i++) {
+                output -= args[i];
+            }
         }
+        else {
+            for(int i = 0; i < args.length; i++) {
+                output += args[i];
+            }
+        }
+        
         return output;
     }
 }
