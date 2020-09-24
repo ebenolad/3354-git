@@ -1,0 +1,9 @@
+a) 6 commits
+b) 4 years ago
+c) git log shows the history of the repository from who made the changes to the time and date of the changes, while git status shows the differences from the head repository
+and which files have been modified but haven't been committed.
+d) An untracked file is a file that is not in the previous snapshot of the repository, while unstaged files are files that were already in the directory but have not been
+been staged so that they are ready to commit
+e)Git reset moves the Head updating the index, while git checkout allow you to navigate to a different branch and update the files in the working directory 
+to match the branch.
+f) Those uncommitted files will be deleted and overwritten by whatever is in the repository that you are pulling from.
