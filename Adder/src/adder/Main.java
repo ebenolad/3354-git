@@ -11,7 +11,21 @@ public class Main {
         }
     }
 
-    private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
-    }
+    
+   private static int addArguments(String[] args) {
+       int flag=0,index=0,sum=0;
+       if(args[0].equals("-"))
+       {
+           flag=1;
+           index=1;
+       }
+       for(int i=index;i<args.length;i++){
+           if(flag==0)
+               sum+=Integer.valueOf(args[i]) ;
+           if(flag==1)
+               sum-=Integer.valueOf(args[i]) ;
+
+       }
+       return sum;
+   }
 }
