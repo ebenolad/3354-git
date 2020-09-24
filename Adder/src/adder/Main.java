@@ -5,10 +5,17 @@ class Main {
     public static void main(String[] args) {
         try {
             int result = addArguments(args);
+            if(args.length < 2)
+                throw new ArrayIndexOutofBoundsException();
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please provide two or more integers to add");
         }
+        catch(ArrayIndexOutofBoundsException e) {
+            System.err.println("Not enough arguments to add");
+        }
+        catch(NumberFormatException n){
+            System.out.println("Invalid character(s)");
+        }
+       
     }
 
     private static int addArguments(String[] args) {
