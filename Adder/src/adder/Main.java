@@ -16,12 +16,12 @@ public class Main {
         
         if(args[0].equals("-"){ // if first argument is the subtraction sign, then subtract the remaining arguments
             for(int i = 1; i < args.length; i++){
-                sum -= args[i];
+                sum -= Integer.parseInt(args[i]);
             }
         }
         else{
             for(int i = 0; i < args.length; i++){ // add each argument to the sum
-            sum += args[i];
+            sum += Integer.parseInt(args[i]);
             }
         return sum;
     }
