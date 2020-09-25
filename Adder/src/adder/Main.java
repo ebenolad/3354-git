@@ -19,7 +19,7 @@ public class Main {
             for(int i = 1; i < args.length; i++){
                 sum -= Integer.parseInt(args[i]);
             }
-    }
+        }
         else{
             for(int i = 0; i < args.length; i++){
                 sum += Integer.parseInt(args[i]);
