@@ -6,12 +6,10 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (NumberFormatException nfe) {
+        } 
+        catch (NumberFormatException nfe) {
             System.err.println("Please provide valid input");
         } 
-        catch (NumberFormatException nfe){
-            System.err.println("Please enter in a valid number");
-        }
         catch (Exception e) {
             System.err.println("Please provide two integers to add");
         }
