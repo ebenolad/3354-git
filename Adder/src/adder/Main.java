@@ -6,6 +6,8 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
+        } catch (NumberFormatException nfe) {
+            System.err.println("Please provide valid input");
         } 
         catch (NumberFormatException nfe){
             System.err.println("Please enter in a valid number");
@@ -16,7 +18,6 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-
         int sum = 0;
         
         if(args[0].equals("-")) { // if first argument is the subtraction sign (-), then subtract the remaining arguments
@@ -29,6 +30,7 @@ public class Main {
                 sum += Integer.parseInt(args[i]);
             }
         }
+
         return sum;
     }
 }
