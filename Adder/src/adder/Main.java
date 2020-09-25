@@ -6,15 +6,17 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (NumberFormatException nfe) {
+        } 
+        catch (NumberFormatException nfe) {
             System.err.println("Please provide valid input");
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             System.err.println("Please provide two integers to add");
         }
     }
 
     private static int addArguments(String[] args) {
-        int sum = 0;
-        return sum;
+        return (args[1] + args[2]);
+    }
    
 }
