@@ -18,11 +18,21 @@ public class Main {
 
     private static int addArguments(String[] args) {
 
-	int sum = 0;
+	int sum = Integer.valueOf(args[1]);
+	
+	if(args[0] = "-"){
+		
+		for(int b = 2; b < args.length: b++){
+			sum -= Integer.valueOf(args[b]);
+		}
+	}else{
 
-	for(int c = 0; c < args.length(); c++){
-		sum += Integer.valueOf(args[c]);
+		for(int c = 2; c < args.length; c++){
+			sum += Integer.valueOf(args[c]);
+		}
+
 	}
+
         return sum;
     }
 }
