@@ -16,6 +16,17 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+        int sum = 0;
+        
+        if(args[0].equals("-"){ // if first argument is the subtraction sign, then subtract the remaining arguments
+            for(int i = 1; i < args.length; i++){
+                sum -= Integer.parseInt(args[i]);
+            }
+        }
+        else{
+            for(int i = 0; i < args.length; i++){ // add each argument to the sum
+            sum += Integer.parseInt(args[i]);
+            }
+        return sum;
     }
 }
