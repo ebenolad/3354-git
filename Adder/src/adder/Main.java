@@ -7,12 +7,12 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } 
-        catch (NumberFormatException nfe) {
-            System.err.println("Please provide valid input");
-        } 
         catch (Exception e) {
             System.err.println("Please provide two integers to add");
         }
+        catch (NumberFormatException nfe) {
+            System.err.println("Please provide valid input");
+        } 
     }
 
     private static int addArguments(String[] args) {
