@@ -25,7 +25,7 @@ public class Main {
             }
         }
         else{
-            for(int i = 0; i < args.length; i++){
+            for(int i = 0; i < args.length; i++){ // add integers
                 sum += Integer.parseInt(args[i]);
             }
         }
