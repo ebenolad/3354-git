@@ -7,6 +7,9 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } 
+        catch (NumberFormatException nfe){
+            System.err.println("Please enter in a valid number");
+        }
         catch (Exception e) {
             System.err.println("Please provide two integers to add");
         }
