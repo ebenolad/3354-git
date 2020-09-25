@@ -24,6 +24,6 @@ public class Main {
                 sum += Integer.parseInt(args[i]);
             }
         }
-        return sum;
+        return sum
     }
 }
