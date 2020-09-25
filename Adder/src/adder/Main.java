@@ -10,9 +10,13 @@ public class Main {
         catch (Exception e) {
             System.err.println("Please provide two integers to add");
         }
+        catch (NumberFormatException nfe) {
+            System.err.println("Please provide valid input");
+        } 
     }
 
     private static int addArguments(String[] args) {
+
         int sum = 0;
         
         if(args[0].equals("-")) { // if first argument is the subtraction sign (-), then subtract the remaining arguments
