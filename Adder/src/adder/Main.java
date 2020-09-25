@@ -20,4 +20,6 @@ public class Main {
         for(int i = 0; i < args.length; i++){
             sum += Integer.parseInt(args[i]);
     }
+        return sum;
+    }
 }
