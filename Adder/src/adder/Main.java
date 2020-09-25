@@ -18,5 +18,4 @@ public class Main {
     private static int addArguments(String[] args) {
         return (args[1] + args[2]);
     }
-   
 }
