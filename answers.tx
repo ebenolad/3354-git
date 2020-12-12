@@ -1,0 +1,18 @@
+(a) How many commits exist in the repository history after completing step 8 (Including commits made by the original author)?
+12 commits exist in the repository history after completing step 8.
+
+(b) When was the file .gitignore added?
+.gitignore file was added four years ago.
+
+(c) What is the difference between git log and git status?
+Git log shows the repository history while git status shows the current working directory and the staging area.
+
+(d) What is the difference between unstaged and untracked files?
+Untracked files are not on git while unstaged files are on git but are not marked for commit.
+
+(e) What is the difference between git checkout and git reset?
+Git Resset is specifically used for upadating the index while git checkout is for updating the working tree directly.
+
+(f) What happens if you try to pull remote changes when there are uncommitted changes in your working directory?
+Git will give the following error message so you do not loose any vital code : "Cannot checkout as your working directory has uncommitted changes " 
+TEST

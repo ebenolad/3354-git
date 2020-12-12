@@ -1,0 +1,13 @@
+jgerm@DESKTOP-S869PSA MINGW64 /c/Users/jgerm/Desktop/Project File 3354/project file 3354/3354-git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README - Copy.md
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README - Copy.md
